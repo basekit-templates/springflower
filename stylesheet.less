@@ -633,11 +633,13 @@ header {
                      &:before {
                             content: "";
                             width: 6%;
-                            height: 24%;
+                            height: 27%;
+                            max-height: 45px;
                             position: absolute;
                             bottom: 0; 
                             left: 0;
                             background-image: image('/images/upper-left.png');
+                            background-size: cover;
                             background-position: top left;
                             background-repeat: no-repeat;
                             background-color: @color-swatch3;
@@ -652,11 +654,13 @@ header {
                         &:after {
                             content: "";
                             width: 6%;
-                            height: 24%;
+                            height: 27%;
+                            max-height: 45px;
                             position: absolute;
                             bottom: 0; 
                             right: 0;
                             background-image: image('/images/upper-right.png');
+                            background-size: cover;
                             background-position: top right;
                             background-repeat: no-repeat;
                             background-color: @color-swatch3;
@@ -756,6 +760,52 @@ header {
                             -webkit-column-count: 1;
                             -moz-column-count: 1;
                             column-count: 1;
+                            &:before {
+                            content: "";
+                            width: 6%;
+                            height: 24%;
+                            max-height: 45px;
+                            position: absolute;
+                            bottom: 0; 
+                            left: 0;
+                            background-image: image('/images/lower-left.png');
+                            background-size: cover;
+                            background-position: bottom left;
+                            background-repeat: no-repeat;
+                            margin-left: -2px;
+                            margin-bottom: -40px;
+                            background-color: @color-swatch3;
+                            @media only screen and (max-width: 1030px) {
+                                width: 7%;
+                                height: 24%;
+                            }
+                            @media @tablet {
+                                display: none;
+                            }
+                        }
+                        &:after {
+                            content: "";
+                            width: 6%;
+                            height: 24%;
+                            max-height: 45px;
+                            position: absolute;
+                            bottom: 0; 
+                            right: 0;
+                            background-image: image('/images/lower-right.png');
+                            background-size: cover;
+                            background-position: bottom right;
+                            background-repeat: no-repeat;
+                            margin-right: -2px;
+                            margin-bottom: -40px;
+                            background-color: @color-swatch3;
+                            @media only screen and (max-width: 1030px) {
+                                width: 7%;
+                                height: 24%;
+                            }
+                            @media @tablet {
+                                display: none;
+                            }
+                        }
                             li {
                                 &.menu-item-promoted { 
                                     display: block;
@@ -837,6 +887,10 @@ header {
                                     h3 {
                                         width: auto;
                                         padding: 0 0 0 35px;
+                                        color: @color-swatch7;
+                                    }
+                                    .menu-item-price p { 
+                                        color: @color-swatch7;
                                     }
                                     &:after {
                                         content: "★";
