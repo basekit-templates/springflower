@@ -27,6 +27,7 @@
             max-height: 45px;
             height: 24%;
             position: absolute;
+            z-index: 999;
             top: 0; 
             left: 0;
             background-image: image('/images/upper-left.png');
@@ -55,6 +56,7 @@
             height: 24%;
             max-height: 45px;
             position: absolute;
+            z-index: 999;
             top: 0;
             right: 0;
             background-image: image('/images/upper-right.png');
@@ -160,6 +162,7 @@ header {
             width: 28.2%;
             float: left;
             max-height: 180px;
+            overflow: hidden;
             margin: 25px;
             background-color: @color-swatch3;
             @media @tablet {
