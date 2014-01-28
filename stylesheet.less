@@ -265,7 +265,7 @@ header {
         }
         li {
             ul {
-                display: none;
+                display: none !important;
             }
         }
         ul {
@@ -300,7 +300,7 @@ header {
 
                 &:hover {
                     ul {
-                        display: block;
+                        display: block !important;
                         position: absolute;
                         background-color: @color-swatch1;
                         background-image:image('/images/ricepaper2.png');
@@ -334,9 +334,6 @@ header {
                     &:hover {
                         color: @font-swatch6-color-hover;
                         text-decoration: underline;
-                        @media @tablet {
-                            color: @color-swatch5;
-                        }
                     }
                     @media @tablet {
                         color: @color-swatch5;
@@ -474,6 +471,7 @@ header {
                 /* Then these styles are applied */
                 width: 100%;
                 margin: 0;
+                padding-top: 3em;
                 background-color: @color-swatch1;
                 border-bottom: 1px dotted @color-swatch6;
             }
@@ -520,7 +518,13 @@ header {
                 @media @tablet {
                     width: 100%;
                     padding: 1em 0;
-                    border-bottom: 1px dotted @color-swatch6;
+                    margin: 0;
+                    border-bottom: 1px dotted @color-swatch3;
+                }
+                &:first-child {
+                    @media @tablet {
+                        border-top: 1px dotted @color-swatch3;
+                    }
                 }
                 &:last-child {
                     @media @tablet {
@@ -561,26 +565,20 @@ header {
                     display: none;
                     @media @tablet {
                         display: block;
-                        width: 100%;
+                        width: 20px;
+                   height: 44px;
                         position: absolute;
-                        top: 1px;
+                        top: -3px;
+                   left: 48.5%;
                         &:after {
-                            content:"";
-                            background: image('/images/nav-icon.png') no-repeat;
-                            background-position: center;
-                            width: 41px;
-                            height: 41px;
-                            top: 0;
-                            right: 0;
-                            left: 0;
-                            margin: 0 auto;
-                            background-color: @color-swatch3;
-                            display: inline-block;
+                            content: '';
                             position: absolute;
-                            border: none;
-                            -webkit-border-radius: 5px 5px 0 0;
-                            -moz-border-radius: 5px 5px 0 0;
-                            border-radius: 5px 5px 0 0;
+                            width: 100%;
+                            height: 3px;
+                            background: @color-swatch3;
+                            top: 11px;
+                            left: 0;
+                            box-shadow: 0 6px 0 @color-swatch3, 0 12px 0 @color-swatch3;
                         }
                     }
                 }
