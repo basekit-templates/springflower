@@ -160,6 +160,9 @@ header {
         position: relative;
         .header-img {
             width: 28.2%;
+            @media only screen and (max-width: 1046px) {
+                width:26%;
+            }
             float: left;
             max-height: 180px;
             overflow: hidden;
@@ -167,6 +170,11 @@ header {
             background-color: @color-swatch3;
             @media @tablet {
                 display: none;
+            }
+            .widget.image{
+                img {
+                    width: 100%;
+                }
             }
         }
         .companyheader {
