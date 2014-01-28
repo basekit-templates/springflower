@@ -59,9 +59,9 @@
        "title": "Futura",
         "font1": {
             "font-family": "\"Futura\", Helvetica, sans-serif",
-            "font-size": "34px",
+            "font-size": "28px",
             "font-weight": "200",
-            "line-height": "44px",
+            "line-height": "38px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -83,9 +83,9 @@
         },
         "font4": {
             "font-family": "\"Futura\", Helvetica, sans-serif",
-            "font-size": "14px",
+            "font-size": "13px",
             "font-weight": "600",
-            "line-height": "24px",
+            "line-height": "23px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
@@ -99,9 +99,9 @@
         },
         "font6": {
             "font-family": "\"Futura\", Helvetica, sans-serif",
-            "font-size": "18px",
+            "font-size": "15px",
             "font-weight": "400",
-            "line-height": "28px",
+            "line-height": "25px",
             "color": "@color-swatch3",
             "color-hover": "darken(@color-swatch3,10%)",
             "letter-spacing": "inherit",
@@ -136,9 +136,9 @@
         },
         "font10": {
             "font-family": "\"Futura\", Helvetica, sans-serif",
-            "font-size": "32px",
+            "font-size": "28px",
             "font-weight": "300",
-            "line-height": "42px",
+            "line-height": "38px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         }
