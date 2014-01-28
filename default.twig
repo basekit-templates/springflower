@@ -1,0 +1,52 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{{widget('extendednavigation', 'navigationheader', {})|raw}}
+
+<header>
+    <div class="wrapper clearfix">
+            <div class="upper_left"></div>
+            <div class="upper_right"></div>
+            <div class="header-img">
+            {{widget('image', 'imageleft', { 'src': asset('images/header-flowers-left.png'), 'title': '', 'alt': '', 'fileName': 'header-flowers-left.png', 'fileSize': '58kb', 'imageSize': '275 x 152', 'imageWidth': '100%'})|raw}}
+            </div>
+
+             <div class="companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            {{widget('content', 'strapline', {"content":"<p>Lorem ip, dolor sit amet consectet</p>"})|raw}}
+            </div>
+
+            <div class="header-img">
+            {{widget('image', 'imageright', { 'src': asset('images/header-flowers-right.png'), 'title': '', 'alt': '', 'fileName': 'header-flowers-right.png', 'fileSize': '58kb', 'imageSize': '275 x 152', 'imageWidth': '100%'})|raw}}
+            </div>
+            <div class="lower_left"></div>
+            <div class="lower_right"></div>
+
+    </div><!--end wrapper clearfix-->
+</header>
+
+<div class="header-text wrapper clearfix">
+    <div class="upper_left"></div>
+    <div class="upper_right"></div>
+    {{widget('content', 'headercontent', {"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec eros non enim condimentum tristique. Fusce commodo lectus ac neque tristique auctor.</p>"})|raw}}
+    <div class="lower_left"></div>
+    <div class="lower_right"></div>
+</div>
+
+
+
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
+</div> 
+
+<footer>
+    <div class="wrapper clearfix">
+        {{widget('content', 'footercolumn1content', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
+        {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+    </div>
+</footer>
+
+{% endblock %}

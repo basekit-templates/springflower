@@ -1,0 +1,146 @@
+{
+    "name":"Chinese",
+    "thumbnail":"cerisekitchen.png",
+    "screenshot":"cerisekitchen.png",
+    "tags": {
+    "en": ["clean", "menu", "cafe", "bar", "restaurant"],
+    "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
+    "br": ["limpo", "menu", "cafeteria", "bar", "restaurante"]
+    },
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#fff9e3",
+            "color2":"#ed1c24",
+            "color3":"#ed1c24",
+            "color4":"#ed1c24",
+            "color5":"#333333",
+            "color6":"#ffffff",
+            "color7":"#9a853d"
+        },
+        "Swatch 2": {
+            "color1":"#fff9e3",
+            "color2":"#2F5490",
+            "color3":"#2F5490",
+            "color4":"#2F5490",
+            "color5":"#2F5490",
+            "color6":"#ffffff",
+            "color7":"#9a853d"
+        },
+        "Swatch 3": {
+            "color1":"#fff9e3",
+            "color2":"#DEA84B",
+            "color3":"#F4898C",
+            "color4":"#715437",
+            "color5":"#715437",
+            "color6":"#ffffff",
+            "color7":"#D8AA4D"
+        },
+        "Swatch 4": {
+            "color1":"#fff9e3",
+            "color2":"#DEA84B",
+            "color3":"#5CB7C1",
+            "color4":"#715437",
+            "color5":"#715437",
+            "color6":"#ffffff",
+            "color7":"#ED8CB5"
+        },
+        "Swatch 5": {
+            "color1":"#fff9e3",
+            "color2":"#4A5360",
+            "color3":"#4A5360",
+            "color4":"#4A5360",
+            "color5":"#4A5360",
+            "color6":"#ffffff",
+            "color7":"#9a853d"
+        }
+    },
+    "fontSwatch": {
+       "title": "Futura",
+        "font1": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "34px",
+            "font-weight": "200",
+            "line-height": "44px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "34px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "18px",
+            "font-weight": "600",
+            "line-height": "28px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "24px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "13px",
+            "font-weight": "400",
+            "line-height": "23px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "28px",
+            "color": "@color-swatch3",
+            "color-hover": "darken(@color-swatch3,10%)",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch1",
+            "background-color-hover": "@color-swatch1"
+        },
+        "font7": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "18px",
+            "font-weight": "300",
+            "line-height": "28px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,5%)"
+        },
+        "font8": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "28px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "28px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Futura\", Helvetica, sans-serif",
+            "font-size": "32px",
+            "font-weight": "300",
+            "line-height": "42px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        }
+    }
+}
