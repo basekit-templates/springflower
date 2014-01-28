@@ -760,47 +760,13 @@ header {
                             -webkit-column-count: 1;
                             -moz-column-count: 1;
                             column-count: 1;
+                            border: 2px solid @color-swatch3;
+                            padding: 2.3%;
                             &:before {
-                                content: "";
-                                width: 6%;
-                                height: 27%;
-                                max-height: 45px;
-                                position: absolute;
-                                bottom: 0; 
-                                left: 0;
-                                background-image: image('/images/upper-left.png');
-                                background-size: cover;
-                                background-position: top left;
-                                background-repeat: no-repeat;
-                                background-color: @color-swatch3;
-                                @media only screen and (max-width: 1030px) {
-                                    width: 7%;
-                                    height: 24%;
-                                }
-                                @media @tablet {
-                                    display: none;
-                                }
+                                display: none;
                             }
                             &:after {
-                                content: "";
-                                width: 6%;
-                                height: 27%;
-                                max-height: 45px;
-                                position: absolute;
-                                bottom: 0; 
-                                right: 0;
-                                background-image: image('/images/upper-right.png');
-                                background-size: cover;
-                                background-position: top right;
-                                background-repeat: no-repeat;
-                                background-color: @color-swatch3;
-                                @media only screen and (max-width: 1030px) {
-                                    width: 7%;
-                                    height: 24%;
-                                }
-                                @media @tablet {
-                                    display: none;
-                                }
+                                display: none;
                             }
                             li {
                                 &.menu-item-promoted { 
