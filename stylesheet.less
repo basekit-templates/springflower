@@ -468,23 +468,19 @@ header {
     &.menusections {
         text-align: center;
         min-height: 30px;
-        width: auto;
-        margin: 2em 0 0;
+        width: 100%;
+        margin: 3em 0 0;
         border: 1px dotted @color-swatch3;
         ul {
-            display: inline-block;
+            display: table;
+            width: 100%;
+            max-width: 100%;
             list-style: none;
             margin: 0px;
-            padding: 5px 0 0 0;
+            padding: 10px 0 0;
             @media @tablet {
-                /* Hidden until nav icon is clicked */
-                display: none;
-                /* Then these styles are applied */
-                width: 100%;
-                margin: 0;
-                padding-top: 3em;
-                background-color: @color-swatch1;
                 border-bottom: 1px dotted @color-swatch6;
+                padding: 0;
             }
 
             /* ALIGN CENTER */
@@ -522,9 +518,8 @@ header {
             }
             li {
                 padding: 0 12px;
-                float: left;
-                display: block;
-                padding-right: 10px;
+                display: inline-block;
+                padding: 0 15px 10px 0;
                 margin-right: 0px;
                 @media @tablet {
                     width: 100%;
@@ -532,12 +527,8 @@ header {
                     margin: 0;
                     border-bottom: 1px dotted @color-swatch3;
                 }
-                &:first-child {
-                    @media @tablet {
-                        border-top: 1px dotted @color-swatch3;
-                    }
-                }
                 &:last-child {
+                    padding-right: 0;
                     @media @tablet {
                         border-bottom: 0;
                     }
@@ -551,14 +542,15 @@ header {
                     color: @font-swatch6-color;
                     line-height:@font-swatch6-line-height;
                     letter-spacing: @font-swatch6-letter-spacing;
+                    position: relative;
                     &:hover {
                         color: @font-swatch6-color-hover;
                         text-decoration: none;
                     }
-                    &:after {
+                    &:before {
                         content: "●";
                         font-size: 0.9em;
-                        padding-left: 13px;
+                        left: -18px;
                         position: absolute;
                         color: @color-swatch4;
                         @media @tablet {
@@ -566,34 +558,11 @@ header {
                         }
                     }
                 }
-                &:last-child a:after {
+                &:first-child a:before {
                                 content: "";
                 }
             }
         }
-        a {
-                &.menu-pull {
-                    display: none;
-                    @media @tablet {
-                        display: block;
-                        width: 20px;
-                   height: 44px;
-                        position: absolute;
-                        top: -3px;
-                   left: 48.5%;
-                        &:after {
-                            content: '';
-                            position: absolute;
-                            width: 100%;
-                            height: 3px;
-                            background: @color-swatch3;
-                            top: 11px;
-                            left: 0;
-                            box-shadow: 0 6px 0 @color-swatch3, 0 12px 0 @color-swatch3;
-                        }
-                    }
-                }
-            }
     }
 }
 
@@ -621,7 +590,7 @@ header {
                 padding: 10px 0;
             }
 
-                ol, li { /* removes list-style on sections and items */
+                ul, li { /* removes list-style on sections and items */
                     list-style: none;
                     padding: 0;
                     margin: 0;
@@ -1037,7 +1006,7 @@ header {
 
                     } /* end li menu-item */
 
-                } /* end ol */  
+                } /* end ul */  
 
 
                 .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
