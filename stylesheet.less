@@ -301,11 +301,11 @@ header {
                 @media @tablet {
                     width: 100%;
                     padding: 1em 0;
-                    border-bottom: 1px dotted fade(@color-swatch5, 25%);
+                    border-bottom: 1px dotted fade(@color-swatch3, 25%);
                 }
                 &:last-child {
                     @media @tablet {
-                        border-bottom: 1px solid fade(@color-swatch5, 25%);
+                        border-bottom: 1px solid @color-swatch3, 25%);
                     }
                 }
 
@@ -345,9 +345,6 @@ header {
                     &:hover {
                         color: @font-swatch6-color-hover;
                         text-decoration: underline;
-                    }
-                    @media @tablet {
-                        color: @color-swatch5;
                     }
                 }
 
