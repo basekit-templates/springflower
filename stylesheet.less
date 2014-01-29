@@ -1012,12 +1012,20 @@ header {
                     .menu-items.odd.bk1-columns {
                         border-top: none;
                         border-bottom: none;
-                        padding: 0;
+                        @media @tablet {
+                               border: none;
+                            }
                         &:before {
                             display: block;
+                            @media @tablet {
+                                display: none;
+                            }
                         }
                         &:after {
                             display: block;
+                            @media @tablet {
+                                display: none;
+                            }
                         }
                     }
                     .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
