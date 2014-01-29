@@ -1009,6 +1009,17 @@ header {
                 .menu-subsection {
                     border: none;
                     padding: 0;
+                    .menu-items.odd.bk1-columns {
+                        border-top: none;
+                        border-bottom: none;
+                        padding: 0;
+                        &:before {
+                            display: block;
+                        }
+                        &:after {
+                            display: block;
+                        }
+                    }
                     .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
                         padding: 0;
                         margin-bottom: 5em;
