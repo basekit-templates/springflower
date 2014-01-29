@@ -587,12 +587,12 @@ header {
                 padding: 10px 0;
             }
 
-                ul, li { /* removes list-style on sections and items */
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                    border: none;
-                } 
+            ul, li { /* removes list-style on sections and items */
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                border: none;
+            } 
 
             /* SECTION AND SUB-SECTION HEADERS */
                 .menu-subsection-header {
@@ -1003,41 +1003,44 @@ header {
 
                     } /* end li menu-item */
 
-                } /* end ul */  
+                } /* end menu-items */  
 
 
-                .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
-                    padding: 0;
-                    margin-bottom: 5em;
-                    position: relative;
+                .menu-subsection {
                     border: none;
-                    border-radius: 0;
-                    .menu-subsection-header {
-                        margin: 0;
-                        padding: 2em 0 1.5em;
+                    padding: 0;
+                    .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
+                        padding: 0;
+                        margin-bottom: 5em;
                         position: relative;
-                        h2 { /* menu-section-name */
-                            color: @color-swatch7;
-                            padding-top: 0;
-                            &:before, &:after {
-                                    content: "\2605";
-                                    display: inline-block;
-                                    height: 27px;
-                                    width: 28px;
-                                    margin: 0 10px;
-                                    position: relative;
-                                    top: -1px;
-                                    @media @tablet {
-                                        display: none;
-                                    }
+                        border: none;
+                        border-radius: 0;
+                        .menu-subsection-header {
+                            margin: 0;
+                            padding: 2em 0 1.5em;
+                            position: relative;
+                            h2 { /* menu-section-name */
+                                color: @color-swatch7;
+                                padding-top: 0;
+                                &:before, &:after {
+                                        content: "\2605";
+                                        display: inline-block;
+                                        height: 27px;
+                                        width: 28px;
+                                        margin: 0 10px;
+                                        position: relative;
+                                        top: -1px;
+                                        @media @tablet {
+                                            display: none;
+                                        }
+                                }
+                            }
+                            p {
+                                color: @color-swatch7;
                             }
                         }
-                        p {
-                            color: @color-swatch7;
-                        }
-                    }
-                    
-                } /* end PROMOTED SUB-SECTION */
+                    }/* end PROMOTED SUB-SECTION */
+                } /* end SUB-SECTION */
 
                 .menu-info {
                     display: inline-block;
