@@ -1,13 +1,40 @@
 @import "@{templateCommon}/basekit-bootstrap.less";
 
+
 .main {
     padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 2.5em;
+    padding-left: 0;
+    @media @tablet {
+        padding-top: 2em;
+        padding-right: 0;
+        padding-bottom: 2em;
+        padding-left: 0;
+    }
+    @media @mobile {
+        padding-top: 1.5em;
+        padding-right: 0;
+        padding-bottom: 1.5em;
+        padding-left: 0;
+    }
 }
 
 .bk-pt-default .main {
     border-top: 1px solid @color-swatch3;
     margin-top: 2em;
 }
+
+.wrapper {
+     width: 90%;
+        margin: 0 5%;
+    @media only screen and (min-width: 1140px) {
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+
+
 
 /* ===============================
    CORNER IMAGES
