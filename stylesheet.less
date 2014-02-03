@@ -396,7 +396,7 @@ header {
                         letter-spacing: @font-swatch6-letter-spacing;
                         position: relative;
                         &:after {
-                            content: "▼";
+                            content: "\25BC";
                             font-size: 5px;
                             position: absolute;
                             top: 1px;
@@ -455,7 +455,7 @@ header {
                        cursor: pointer;
                    }
                    &:after {
-                        content:"↓";
+                        content:"\2193";
                         color: @color-swatch1;
                         font-size: 1.3em;
                         text-align: center;
@@ -572,7 +572,7 @@ header {
                         text-decoration: none;
                     }
                     &:before {
-                        content: "●";
+                        content: "\25CF";
                         font-size: 0.9em;
                         left: -18px;
                         position: absolute;
@@ -605,7 +605,7 @@ header {
             position: relative;
             &.selected {
                 display: block;
-                margin: 30px auto 0;
+                margin: 4.5em auto 0;
                 float: left;
                 width: 100%;
                 border-left: 2px solid @color-swatch3;
@@ -616,7 +616,6 @@ header {
                     border-right: none;
                     border-bottom: none;
                 }
-                margin-top: 4em;
                 &:before {
                     content: "";
                     width: 6%;
@@ -740,7 +739,8 @@ header {
 
                 .menu-items {
                     margin: 0 auto;
-                    padding: 0 2.3%;
+                    position: relative;
+                    padding: 0 5%;
                     @media only screen and (max-width: 907px) {
                         padding: 0 2.25%;
                     }
@@ -748,14 +748,12 @@ header {
                         padding: 0;
                         width:100%;
                     }
-
-                    position: relative;
                     -webkit-column-count: 2;
-                    -webkit-column-gap: 3em;
+                    -webkit-column-gap: 4em;
                     -moz-column-count: 2;
-                    -moz-column-gap: 3em;   
+                    -moz-column-gap: 4em;   
                     column-count: 2;
-                    column-gap: 3em;
+                    column-gap: 4em;
                     > * {
                         break-inside: avoid;
                         -webkit-column-break-inside: avoid;
@@ -768,36 +766,10 @@ header {
                         -moz-column-count: 1;
                         column-count: 1;
                     }
-                    &.odd {
-                        &.bk1-columns {
-                            -webkit-column-count: 1;
-                            -moz-column-count: 1;
-                            column-count: 1;
-                            padding: 2.3%;
-                            &:before {
-                                display: none;
-                            }
-                            &:after {
-                                display: none;
-                            }
-                            li {
-                                padding: 0;
-                                margin: 0;
-                                border-bottom: none;
-                                &.menu-item-promoted { 
-                                    display: block;
-                                }
-                                .inner-item {
-                                    .menu-item-image-wrap {
-                                        width: 100%;
-                                        margin: 0;
-                                        @media @mobile {
-                                            width: 100%;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                    &.odd.bk1-columns {
+                        -webkit-column-count: 1;
+                        -moz-column-count: 1;
+                        column-count: 1;
                     }
                     
                     li { /* menu-item */
@@ -823,7 +795,7 @@ header {
                                         color: @color-swatch7;
                                     }
                                     &:after {
-                                        content: "★";
+                                        content: "\2605";
                                         font-size: 1.8em;
                                         position: absolute;
                                         top: 0;
