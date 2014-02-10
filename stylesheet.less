@@ -1131,8 +1131,16 @@ header {
     text-align: left;
 }
 
+.widget {
+    &.bloglistposts {
+        .blog-post-item {
+            border-bottom: 1px dotted @color-swatch5;
+        }
+
+    }
+}
+
 .blog-post-item {
-    border-bottom: 1px dotted lighten(@color-swatch5,50%);
     margin: 1.5em 0;
     padding-bottom: 1em;
     h2 {
