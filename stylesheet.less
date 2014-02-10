@@ -21,7 +21,6 @@
 }
 
 .bk-pt-default .main {
-    border-top: 1px solid @color-swatch3;
     margin-top: 2em;
 }
 
@@ -191,7 +190,7 @@ header {
                 width:26%;
             }
             float: left;
-            max-height: 180px;
+            max-height: 150px;
             overflow: hidden;
             margin: 25px;
             background-color: @color-swatch3;
@@ -1033,56 +1032,125 @@ header {
                       padding: 0;
                       color: @color-swatch3;
                     }
-
-                    dl { /* menu-dietary-key */
-                      float: left;
-                      width: 100%;
-                      margin: 5px 0;
-                        dt, dd {
-                            display: inline-block;
-                        }
-                        dt { /* dietary-icon */
-                            vertical-align: top; 
-                            background-color: lighten(@color-swatch6,10%);
-                            width: 25px;
-                            height: 25px;
-                            border: 0;
-                            -webkit-border-radius: 100px;
-                            -moz-border-radius: 100px;
-                            border-radius: 100px;
-                            background-repeat: no-repeat;
-                            background-size: 13px;
-                            background-position: center;
-                        }
-                        .vegetarian-icon {
-                            background-image: image('/images/veggie.png');
-                        }
-
-                        .glutenFree-icon {
-                            background-image: image('/images/nuts.png');
-                        }
-                        dd { /* text for icon */
-                            font-family:@font-swatch5-font-family;
-                            font-size:@font-swatch5-font-size;
-                            font-weight: @font-swatch5-font-weight;
-                            line-height:@font-swatch5-line-height;
-                            color: @font-swatch5-color;
-                            letter-spacing: @font-swatch5-letter-spacing;
-                            margin: 0 5px -7px;
-                        } /* end dd */
-                    } /* end dl */
             } /* end menu-info */
         } /* end main */
     } /* end .widget.menu */
 } /* end .widget */
 
 /* ===============================
-  FOOTER 
+  CONTACT FORM
    =============================== */
 
-footer {
-    text-align: center;
-    background-color: hsla(hue(@color-swatch3), saturation(@color-swatch3), lightness(@color-swatch3), 0.1);
+   .contactform fieldset {
+        border: none;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+
+    .widget.contactform fieldset input, .widget.contactform fieldset textarea {
+        border: 1px solid darken(@color-swatch1,10%);
+    }
+
+
+/* ===============================
+  SIGN UP FORM
+   =============================== */
+
+   .widget.signupform fieldset input {
+        border: 1px solid darken(@color-swatch1,10%);
+    }
+    .signupform fieldset button {
+        padding: 10px;
+    }
+
+/* ===============================
+  TWITTER
+   =============================== */
+
+   .twitter-profile-pic {
+        float: left;
+        margin-right: 10px;
+    }
+
+/* ===============================
+  SLIDESHOW WIDGET
+   =============================== */
+
+.svg .widget.responsiveslideshow .slideshow-widget .btn-prev {
+  left: 10px;
+  background: image('/images/slideshow-arrow-left.svg') no-repeat center left;
+  background-size: contain;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev {
+  background: image('/images/slideshow-arrow-left.png') no-repeat center left;
+}
+
+.svg .widget.responsiveslideshow .slideshow-widget .btn-next {
+  right: 10px;
+  background: image('/images/slideshow-arrow-right.svg') no-repeat center right; 
+  background-size: contain;   
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-next {
+  background: image('/images/slideshow-arrow-right.png') no-repeat center right;   
+}
+.widget {
+    &.responsiveslideshow {
+        .content-wrapper {
+            background-color: @color-swatch1;
+            text-align: center;
+        }
+        .title {
+            display: inline-block;
+            padding:10px 15px 0 15px;
+            color: @color-swatch5;
+        }
+        .description {
+            display: block;
+            padding: 0 15px 15px;
+            color: @color-swatch5;
+        }
+    }
+}
+
+/* ===============================
+  BLOG
+   =============================== */
+
+.blog-post-metadata {
+    background-color: transparent;
+    margin-top: 0;
+    text-align: left;
+}
+
+.blog-post-item {
+    border-bottom: 1px dotted lighten(@color-swatch5,50%);
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    h2 {
+        a {
+            font-family: @font-swatch2-font-family;
+            font-size: @font-swatch2-font-size;
+            font-weight: @font-swatch2-font-weight;
+            line-height: @font-swatch2-line-height;
+            color: @font-swatch2-color;
+            letter-spacing: @font-swatch2-letter-spacing;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.blog-list-footer {
+    background-color: transparent;
+}
+
+.blog-post-more-link {
+    float: left;
+    width: 100%;
 }
 
 /* ===============================
@@ -1110,8 +1178,20 @@ footer .widget.profile .bk-profile-socialicons {
 
 hr {
     &.line {
-        background-color: @color-swatch3;
+        background-color: lighten(@color-swatch5,50%);
         height: 1px;
     }
 }
+
+
+/* ===============================
+  FOOTER 
+   =============================== */
+
+footer {
+    padding-top: 2em;
+    text-align: center;
+    background-color: hsla(hue(@color-swatch3), saturation(@color-swatch3), lightness(@color-swatch3), 0.1);
+}
+
 
