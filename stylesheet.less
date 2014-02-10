@@ -188,9 +188,10 @@ header {
             width: 28.2%;
             @media only screen and (max-width: 1046px) {
                 width:26%;
+                max-height: 100px;
             }
             float: left;
-            max-height: 150px;
+            max-height: 145px;
             overflow: hidden;
             margin: 25px;
             background-color: @color-swatch3;
@@ -481,7 +482,9 @@ header {
     }
 }
 
-
+.widget .extendednavigation ul li.folder:after {
+    display: none;
+}
 
 /* ===============================
    MENU SECTIONS NAVIGATION
