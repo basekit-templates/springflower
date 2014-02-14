@@ -76,7 +76,7 @@
         "font3": {
             "font-family": "\"Futura\", Helvetica, sans-serif",
             "font-size": "18px",
-            "font-weight": "600",
+            "font-weight": "400",
             "line-height": "28px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"

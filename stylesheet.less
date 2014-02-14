@@ -902,6 +902,9 @@
                                     margin-bottom: 5px;
                                     padding: 0 7px;
                                 }
+                                .not-spicy-icon {
+                                    display: none;
+                                }
                             } /* end menu-section-item-dietary-props */   
 
 
@@ -1003,15 +1006,16 @@
     }
 
 
-/* ===============================
-  SIGN UP FORM
+  /* ===============================
+  SIGN UP FORM & PROFILE FORM
    =============================== */
 
-   .widget.signupform fieldset input {
+   .widget.signupform fieldset input, .widget.profile form fieldset input {
         border: 1px solid darken(@color-swatch1,10%);
+        background-color: #ffffff;
     }
-    .signupform fieldset button {
-        padding: 10px;
+    .signupform fieldset button, .widget.profile form button {
+        padding: 6px 10px 10px;
     }
 
 /* ===============================
@@ -1087,10 +1091,20 @@
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             border-radius: 4px;
+            left: 45%;
+            top: 43%;
             &:after {
                 color: #fff;
                 letter-spacing: -4px;
                 top: 2px;
+            }
+            @media @mobile {
+                width: 40px;
+                height: 40px;
+                &:after {
+                    font-size: 15px;
+                    line-height: 36px;
+                }
             }
         }
     }
@@ -1195,6 +1209,28 @@
 .bk-footer .widget.socialicons .icons {
     text-align: center;
 }
+
+/* ===============================
+  IMAGE WIDGET
+   =============================== */
+
+.widget.image {
+    .image-title, .image-description {
+    color: @font-swatch5-color;
+    }
+}
+
+/* ===============================
+   BLOCK QUOTE
+  =============================== */
+
+  blockquote {
+    background-color: transparent;
+    margin: 20px;
+    &:before {
+        color: @color-swatch3;
+    }
+  }
 
 /* ===============================
   DIVIDER WIDGET
