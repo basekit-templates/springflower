@@ -182,6 +182,10 @@
     background-color: transparent;
     padding: 2.5em 0 1.5em;
     text-align: center;
+    @media @tablet {
+        float: left;
+        width: 100%;
+    }
     .wrapper {
         position: relative;
         .header-img {
@@ -266,6 +270,10 @@
    ==================================== */
 
    .header-text {
+        @media @tablet {
+            float: left;
+            width: 90%;
+        }
         @media @mobile {
             border-top: 1px dotted @color-swatch3;
             padding-top: 30px;
@@ -450,7 +458,9 @@
                    position: absolute;
                    margin: 0 auto;
                    width: 100%;
+                   height: 42px;
                    top: 0;
+                   text-indent: 0;
                    &:hover {
                        cursor: pointer;
                    }
