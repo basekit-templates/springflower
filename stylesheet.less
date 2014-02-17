@@ -661,7 +661,7 @@
                     -webkit-background-size: cover;
                     -moz-background-size: cover;
                     -o-background-size: cover;    
-                    box-shadow:inset -1px -1px 0 0 @color-swatch1;
+                    box-shadow:inset -1px 0 0 0 @color-swatch1;
                     background-position: top left;
                     background-repeat: no-repeat;
                     background-color: @color-swatch3;
@@ -682,13 +682,13 @@
                     min-height: 45px;
                     position: absolute;
                     top: -2em; 
-                    right: -3px;
+                    right: -2px;
                     background-image: image('/images/upper-right.png');
                     background-size: cover;
                     -webkit-background-size: cover;
                     -moz-background-size: cover;
                     -o-background-size: cover;  
-                    box-shadow:inset 1px -1px 0 0 @color-swatch1;
+                    box-shadow:inset 1px 0 0 0 @color-swatch1;
                     background-position: top right;
                     background-repeat: no-repeat;
                     background-color: @color-swatch3;
@@ -850,6 +850,7 @@
 
                         .inner-item {
                             display: inline-block;
+                            width: 100%;
                             h3 { /* menu-item-name */  
                                 padding: 0 5px 0 0;
                             }
@@ -1017,12 +1018,17 @@
                     display: inline-block;
                     width: 100%;
                     text-align: center;
-                    margin: 2em 0;
-                    p { /* menu-note */
-                      float: left;
-                      width: 100%;
-                      padding: 0;
-                      color: @color-swatch3;
+                    margin: 0 auto;
+                    p { /* menu-note */  
+                        width: 90%;
+                        padding: 0;
+                        margin: 1em auto 3em;
+                        padding: 0;
+                        color: @color-swatch3;
+                        @media @tablet {
+                            width: 100%;
+                            margin: 1em auto;
+                        }
                     }
             } /* end menu-info */
         } /* end main */
