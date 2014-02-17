@@ -323,9 +323,6 @@
         max-width: 100%;
         min-height: 40px;
         background-color: fade(@color-swatch4, 10%);
-        @media @tablet {
-            background-color: transparent;
-        }
         li {
             ul {
                 display: none !important;
@@ -354,6 +351,7 @@
                     width: 100%;
                     padding: 1em 0;
                     border-bottom: 1px dotted fade(@color-swatch3, 25%);
+                    background-color: @color-swatch1;
                 }
                 &:last-child {
                     @media @tablet {
@@ -405,11 +403,7 @@
                     margin-right: 20px;            
                     cursor: pointer;
                     background-image: none;
-                    @media @tablet {
-                        background-image:image('/images/texture-background.png');
-                        background-repeat: repeat;
-                        background-position: center;
-                    }
+                    z-index: 9999999;
                     .text {
                         display: block;
                         padding: 0 15px;
@@ -435,15 +429,9 @@
                                 padding-right: 10px;
                             }
                         }
-                        @media @tablet {
-                                color: @color-swatch5;
-                            }
                         &:hover {
                             color: @font-swatch6-color-hover;
-                            text-decoration: none;
-                            @media @tablet {
-                                color: @color-swatch5;
-                            }
+                            text-decoration: underline;
                         }
                     }
                     ul {
@@ -468,45 +456,33 @@
         }
 
         a {
-           &.pull {
-               display: none;
-               @media @tablet {
-                   display: block;
-                   position: absolute;
-                   margin: 0 auto;
-                   width: 100%;
-                   height: 42px;
-                   top: 0;
-                   text-indent: 0;
-                   &:hover {
+            &.pull {
+                display: none;
+                @media @tablet {
+                    display: block;
+                    margin: 0;
+                    width: 20px;
+                    height: 44px;
+                    position: absolute;
+                    top: -3px;
+                    left: 48.5%;
+                    &:hover {
                        cursor: pointer;
-                   }
-                   &:after {
-                        content:"\2193";
-                        color: @color-swatch1;
-                        font-size: 1.3em;
-                        text-align: center;
-                        width: 81px;
-                        height: 38px;
-                        top: 0;
-                        right: 0;
-                        left: 0;
-                        margin: 0 auto;
-                        background-color: lighten(@color-swatch3,10%);
-                        display: inline-block;
-                        position: absolute;
-                        border: none;
-                        -webkit-border-radius: 0 0 50px 50px;
-                        -moz-border-radius: 0 0 50px 50px;
-                        border-radius: 0 0 50px 50px;
-                        -webkit-box-shadow: 0px 3px 0px darken(@color-swatch3,20%);
-                        -moz-box-shadow:    0px 3px 0px darken(@color-swatch3,20%);
-                        box-shadow:         0px 3px 0px darken(@color-swatch3,20%);
-                        overflow: hidden;
-                   }
-               }
-           }
-       }
+                    }
+                    &:after {
+                       content: '';
+                       position: absolute;
+                       width: 100%;
+                       height: 3px;
+                       background: @color-swatch3;
+                       top: 15px;
+                       left: 0;
+                       box-shadow: 0 6px 0 @color-swatch3, 0 12px 0 @color-swatch3;
+                    }
+                }
+            }
+        }
+       
     }
 }
 
