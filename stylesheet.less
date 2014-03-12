@@ -1282,3 +1282,45 @@ hr {
 }
 
 
+/* ===============================
+   PRINT STYLES 
+   =============================== */
+.print-mixin {
+	.header-img,
+	.widget.menu .main .menu-header h1:before,
+	.widget.menu .main .menu-header h1:after,
+	.widget.menu .main .menu-subsection-header h1:before,
+	.widget.menu .main .menu-subsection-header h1:after,
+	.widget.menu .main.selected:before,
+	.widget.menu .main.selected:after {
+		display: none;
+	}
+	.widget.menu .main.selected {
+		border: none !important;
+	}
+	.bk-header .wrapper .companyheader {
+		width: auto;
+		float: none;
+	}
+	.widget.menu .main .menu-items li .inner-item .menu-section-item-dietary-props .dietary-icon,
+	.widget.menu .main .menu-items li {
+		border-color: #b9b9b9;
+	}
+	.widget.menu .main .menu-items li .inner-item:before, .widget.menu .main .menu-items li .inner-item:after {
+		color: #b9b9b9;
+	}
+}
+
+@media print {
+    body {
+	    background-color: white !important;
+    }
+    .print-mixin;
+}
+
+.bk-print {
+    .print-mixin;
+	background-color: white !important;
+}
+
+
