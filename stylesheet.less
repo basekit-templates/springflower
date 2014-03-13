@@ -58,7 +58,6 @@
             top: 0; 
             left: 0;
             background-image: image('/images/upper-left.png');
-            background-color: @color-swatch3;
             background-size: cover;
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -91,7 +90,6 @@
             top: 0;
             right: 0;
             background-image: image('/images/upper-right.png');
-            background-color: @color-swatch3;
             background-position: top right;
             background-size: cover;
             -webkit-background-size: cover;
@@ -123,7 +121,6 @@
             bottom: 0; 
             left: 0;
             background-image: image('/images/lower-left.png');
-            background-color: @color-swatch3;
             background-size: cover;
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -155,7 +152,6 @@
             bottom: 0;
             right: 0;
             background-image: image('/images/lower-right.png');
-            background-color: @color-swatch3;
             background-size: cover;
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -216,7 +212,6 @@
             max-height: 145px;
             overflow: hidden;
             margin: 25px;
-            background-color: @color-swatch3;
             @media @tablet {
                 display: none;
             }
@@ -643,7 +638,6 @@
                     box-shadow:inset -1px 0 0 0 @color-swatch1;
                     background-position: top left;
                     background-repeat: no-repeat;
-                    background-color: @color-swatch3;
                     @media only screen and (max-width: 1030px) {
                         width: 7%;
                         height: 24%;
@@ -670,7 +664,6 @@
                     box-shadow:inset 1px 0 0 0 @color-swatch1;
                     background-position: top right;
                     background-repeat: no-repeat;
-                    background-color: @color-swatch3;
                     @media only screen and (max-width: 1030px) {
                         width: 7%;
                         height: 24%;
@@ -713,7 +706,6 @@
                         &:after {
                             content: "";
                             background-image: image('/images/flowers-right.png');
-                            background-color: @color-swatch3;
                             background-repeat: no-repeat;
                             display: inline-block;
                             height: 41px;
@@ -728,7 +720,6 @@
                         &:before {
                             content: "";
                             background-image: image('/images/flowers-left.png');
-                            background-color: @color-swatch3;
                             background-repeat: no-repeat;
                             display: inline-block;
                             height: 41px;
@@ -918,7 +909,6 @@
                                     float: left;
                                     margin-right: 5px;
                                     margin-bottom: 5px;
-                                    margin-left: 1px;
                                     padding: 0 7px;
                                 }
                                 .not-spicy-icon {
@@ -1279,44 +1269,6 @@ hr {
     background-color: hsla(hue(@color-swatch3), saturation(@color-swatch3), lightness(@color-swatch3), 0.1);
     float: left;
     width: 100%;
-}
-
-
-/* ===============================
-   PRINT STYLES 
-   =============================== */
-.print-mixin {
-	.header-img,
-	.widget.menu .main .menu-header h1:before,
-	.widget.menu .main .menu-header h1:after,
-	.widget.menu .main .menu-subsection-header h1:before,
-	.widget.menu .main .menu-subsection-header h1:after,
-	.widget.menu .main.selected:before,
-	.widget.menu .main.selected:after {
-		display: none;
-	}
-	.widget.menu .main.selected {
-		border: none !important;
-	}
-	.bk-header .wrapper .companyheader {
-		width: auto;
-		float: none;
-	}
-	.widget.menu .main .menu-items li .inner-item .menu-section-item-dietary-props .dietary-icon,
-	.widget.menu .main .menu-items li {
-		border-color: #b9b9b9;
-	}
-	.widget.menu .main .menu-items li .inner-item:before, .widget.menu .main .menu-items li .inner-item:after {
-		color: #b9b9b9;
-	}
-}
-
-@media print {
-    .print-mixin;
-}
-
-.bk-print {
-    .print-mixin;
 }
 
 
